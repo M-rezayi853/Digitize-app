@@ -4,6 +4,7 @@ import Head from 'next/head'
 import Navbar from '../components/mobile/Navbar'
 import FilterSortbar from '../components/mobile/FilterSortbar'
 import Products from '../components/mobile/Products'
+import Sort from '../components/mobile/Sort'
 
 interface Props {}
 
@@ -24,8 +25,8 @@ const HomePage: NextPage<Props> = () => {
           </div>
 
           {/* sort section */}
-          <div className='hidden md:block bg-white p-4 col-span-8  lg:col-span-9'>
-            sort
+          <div className='hidden md:block col-span-8  lg:col-span-9'>
+            <Sort />
           </div>
 
           {/* product section */}
