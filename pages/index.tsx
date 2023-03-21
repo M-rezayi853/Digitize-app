@@ -1,19 +1,21 @@
 import { NextPage } from 'next'
 import Head from 'next/head'
 
+import Navbar from '../components/Navbar'
+
 interface Props {}
 
-const Home: NextPage<Props> = () => {
+const HomePage: NextPage<Props> = () => {
   return (
     <>
       <Head>
-        <title>Digitize App</title>
+        <title>Digitize App - Shop</title>
       </Head>
-      <main>
-        <h1 className='text-4xl font-black'>دوره تیلویند</h1>
+      <main className='bg-gray-100 h-screen pt-10 px-4'>
+        <Navbar />
       </main>
     </>
   )
 }
 
-export default Home
+export default HomePage
