@@ -3,6 +3,7 @@ import Head from 'next/head'
 
 import Navbar from '../components/mobile/Navbar'
 import FilterSortbar from '../components/mobile/FilterSortbar'
+import Products from '../components/mobile/Products'
 
 interface Props {}
 
@@ -15,6 +16,7 @@ const HomePage: NextPage<Props> = () => {
       <main className='bg-gray-100 h-screen pt-10 px-4'>
         <Navbar />
         <FilterSortbar />
+        <Products />
       </main>
     </>
   )

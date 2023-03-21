@@ -4,7 +4,7 @@ interface Props {}
 
 const Navbar: FC<Props> = (): JSX.Element => {
   return (
-    <div className='flex items-center justify-between mb-6'>
+    <div className='flex md:hidden items-center justify-between mb-6'>
       <div>Digitize</div>
       <div className='text-lg font-bold text-slate-800'>ساعت هوشمند</div>
       <div className='w-7 h-7 bg-white shadow-lg flex items-center justify-center rounded'>

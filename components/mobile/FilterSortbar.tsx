@@ -4,7 +4,7 @@ interface Props {}
 
 const FilterSortbar: FC<Props> = (): JSX.Element => {
   return (
-    <div className='flex items-center justify-between gap-x-4'>
+    <div className='flex md:hidden items-center justify-between gap-x-4 mb-9'>
       <div className='bg-white rounded p-2 flex items-center justify-start w-1/2'>
         <div>
           <svg
