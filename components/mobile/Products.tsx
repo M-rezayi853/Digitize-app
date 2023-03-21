@@ -44,7 +44,7 @@ const Products: FC<Props> = (): JSX.Element => {
   }
 
   return (
-    <div className='grid gap-x-2 sm:gap-x-4 md:gap-x-8 gap-y-8 md:gap-y-10 grid-cols-2 md:grid-cols-3 lg:grid-cols-4'>
+    <div className='grid gap-x-2 sm:gap-x-4 lg:gap-x-6 gap-y-8 md:gap-y-10 grid-cols-2 md:grid-cols-3 lg:grid-cols-4'>
       {products.map((product) => (
         <div className='bg-white rounded-xl p-2 shadow-md' key={product.id}>
           <div className='mb-3 bg-gray-100 rounded-xl flex justify-center items-center p-10 max-h-36'>
@@ -127,11 +127,11 @@ const Products: FC<Props> = (): JSX.Element => {
           </div>
 
           {/* product title */}
-          <div className='text-slate-800 text-xs md:text-base font-bold mb-2'>
+          <div className='text-slate-800 text-xs sm:text-base font-bold mb-2'>
             {product.title}
           </div>
 
-          <div className='text-orange-600 font-medium text-left text-sm mb-3'>
+          <div className='text-orange-600 font-medium text-left text-sm sm:text-base mb-3'>
             {product.price}
           </div>
 
