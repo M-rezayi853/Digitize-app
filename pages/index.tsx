@@ -7,6 +7,7 @@ import Products from '../components/mobile/Products'
 import Sort from '../components/mobile/Sort'
 import Sidebar from '../components/mobile/Sidebar'
 import NavbarTop from '../components/desktop/NavbarTop'
+import NavbarBottom from '../components/mobile/NavbarBottom'
 
 interface Props {}
 
@@ -18,7 +19,7 @@ const HomePage: NextPage<Props> = () => {
       </Head>
 
       <NavbarTop />
-      <main className='2xl:container mx-auto 2xl:max-w-screen-2xl my-8 px-4 lg:px-6'>
+      <main className='2xl:container mx-auto 2xl:max-w-screen-2xl my-8 mb-24 md:mb-8 px-4 lg:px-6'>
         <Navbar />
         <FilterSortbar />
 
@@ -38,6 +39,8 @@ const HomePage: NextPage<Props> = () => {
             <Products />
           </div>
         </div>
+
+        <NavbarBottom />
       </main>
     </>
   )
