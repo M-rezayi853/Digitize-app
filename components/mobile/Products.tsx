@@ -47,12 +47,12 @@ const Products: FC<Props> = (): JSX.Element => {
     <div className='grid gap-x-2 sm:gap-x-4 lg:gap-x-6 gap-y-8 md:gap-y-10 grid-cols-2 md:grid-cols-3 lg:grid-cols-4'>
       {products.map((product) => (
         <div className='bg-white rounded-xl p-2 shadow-md' key={product.id}>
-          <div className='mb-3 bg-gray-100 rounded-xl flex justify-center items-center p-10 max-h-36'>
+          <div className='mb-3 bg-gray-100 rounded-xl flex justify-center items-center p-2'>
             <Image
               className='flex justify-center items-center'
-              src='/assets/images/img-1.png'
-              width={100}
-              height={100}
+              src='/assets/images/img-2.png'
+              width={500}
+              height={500}
               alt='apple watch'
             />
           </div>
