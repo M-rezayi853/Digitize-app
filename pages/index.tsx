@@ -6,6 +6,7 @@ import FilterSortbar from '../components/mobile/FilterSortbar'
 import Products from '../components/mobile/Products'
 import Sort from '../components/mobile/Sort'
 import Sidebar from '../components/mobile/Sidebar'
+import NavbarTop from '../components/desktop/NavbarTop'
 
 interface Props {}
 
@@ -15,6 +16,8 @@ const HomePage: NextPage<Props> = () => {
       <Head>
         <title>Digitize App - Shop</title>
       </Head>
+
+      <NavbarTop />
       <main className='bg-gray-100 pt-10 px-4'>
         <Navbar />
         <FilterSortbar />
