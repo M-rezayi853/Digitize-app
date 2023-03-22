@@ -18,7 +18,7 @@ const HomePage: NextPage<Props> = () => {
       </Head>
 
       <NavbarTop />
-      <main className='2xl:container mx-auto 2xl:max-w-screen-2xl my-8 px-4'>
+      <main className='2xl:container mx-auto 2xl:max-w-screen-2xl my-8 px-4 lg:px-6'>
         <Navbar />
         <FilterSortbar />
 

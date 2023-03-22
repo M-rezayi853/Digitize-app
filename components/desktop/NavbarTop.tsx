@@ -6,7 +6,7 @@ interface Props {}
 const NavbarTop: FC<Props> = (): JSX.Element => {
   return (
     <nav className='hidden md:block bg-white py-4 shadow-lg sticky z-10 top-0'>
-      <div className='2xl:container mx-auto 2xl:max-w-screen-2xl flex items-center justify-between px-4'>
+      <div className='2xl:container mx-auto 2xl:max-w-screen-2xl flex items-center justify-between px-4 lg:px-6'>
         <ul className='flex items-center md:gap-x-0 lg:gap-x-4 text-slate-800 md:text-md font-semibold'>
           <li>
             <Link

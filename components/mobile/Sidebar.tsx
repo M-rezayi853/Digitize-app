@@ -13,7 +13,7 @@ const Sidebar: FC<Props> = (): JSX.Element => {
   }
 
   return (
-    <div className='bg-white p-5 rounded-xl px-6'>
+    <div className='bg-white p-5 rounded-xl px-6 max-h-[calc(100vh_-_140px)] overflow-auto sticky top-[105px]'>
       {/* categories */}
       <div className='bm-7'>
         <div className='text-xl font-bold text-orange-500 mb-5'>دسته بندی</div>
