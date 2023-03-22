@@ -5,6 +5,7 @@ import Navbar from '../components/mobile/Navbar'
 import FilterSortbar from '../components/mobile/FilterSortbar'
 import Products from '../components/mobile/Products'
 import Sort from '../components/mobile/Sort'
+import Sidebar from '../components/mobile/Sidebar'
 
 interface Props {}
 
@@ -14,14 +15,14 @@ const HomePage: NextPage<Props> = () => {
       <Head>
         <title>Digitize App - Shop</title>
       </Head>
-      <main className='bg-gray-100 h-screen pt-10 px-4'>
+      <main className='bg-gray-100 pt-10 px-4'>
         <Navbar />
         <FilterSortbar />
 
         <div className='grid grid-cols-12 md:grid-rows-[50px_minmax(500px,_1fr)] md:gap-8'>
           {/* sidebar */}
-          <div className='hidden md:block bg-white p-4 col-span-4 lg:col-span-3 row-span-2'>
-            sidebar
+          <div className='hidden md:block col-span-4 lg:col-span-3 row-span-2'>
+            <Sidebar />
           </div>
 
           {/* sort section */}
