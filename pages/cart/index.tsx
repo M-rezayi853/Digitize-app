@@ -25,30 +25,6 @@ const CartPage: NextPage<Props> = () => {
 
         <CartItems />
 
-        <div className='md:hidden'>
-          <BreadCrumbs />
-        </div>
-
-        <div className='grid grid-cols-12 md:grid-rows-[50px_minmax(500px,_1fr)] md:gap-8'>
-          {/* sidebar */}
-          <div className='hidden md:block col-span-4 lg:col-span-3 xl:col-span-2 row-span-2'>
-            <Sidebar />
-          </div>
-
-          {/* sort section */}
-          <div className='hidden md:block col-span-8 lg:col-span-9 xl:col-span-10'>
-            {/* <Sort /> */}
-            <div className='bg-white px-4 flex items-center gap-x-4 text-gray-500 rounded-lg'>
-              <BreadCrumbs />
-            </div>
-          </div>
-
-          {/* product section */}
-          <div className='col-span-12 md:col-span-8 lg:col-span-9 xl:col-span-10'>
-            <ProductDetails />
-          </div>
-        </div>
-
         <NavbarBottom />
       </main>
     </>
