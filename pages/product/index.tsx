@@ -22,7 +22,9 @@ const ProductPage: NextPage<Props> = () => {
       <NavbarTop />
       <main className='2xl:container mx-auto 2xl:max-w-screen-2xl my-8 mb-24 md:mb-8 px-4 lg:px-6'>
         <Navbar />
-        <BreadCrumbs />
+        <div className='md:hidden'>
+          <BreadCrumbs />
+        </div>
 
         <div className='grid grid-cols-12 md:grid-rows-[50px_minmax(500px,_1fr)] md:gap-8'>
           {/* sidebar */}
@@ -31,8 +33,11 @@ const ProductPage: NextPage<Props> = () => {
           </div>
 
           {/* sort section */}
-          <div className='hidden md:block col-span-8  lg:col-span-9 xl:col-span-10'>
-            <Sort />
+          <div className='hidden md:block col-span-8 lg:col-span-9 xl:col-span-10'>
+            {/* <Sort /> */}
+            <div className='bg-white px-4 flex items-center gap-x-4 text-gray-500 rounded-lg'>
+              <BreadCrumbs />
+            </div>
           </div>
 
           {/* product section */}

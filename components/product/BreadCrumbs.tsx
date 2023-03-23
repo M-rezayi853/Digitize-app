@@ -4,7 +4,7 @@ interface Props {}
 
 const BreadCrumbs: FC<Props> = (): JSX.Element => {
   return (
-    <div className='flex items-center gap-x-2 text-sm my-6'>
+    <div className='flex items-center gap-x-2 text-sm md:text-md my-6'>
       <span className='text-orange-400'>تلفن همراه</span>
       <span className=''>
         <svg
