@@ -21,6 +21,38 @@ const ProductDetails: FC<Props> = (): JSX.Element => {
             width={500}
             height={500}
           />
+
+          <div className='hidden md:flex items-center justify-center gap-x-4 mt-2 px-2'>
+            <div className='border border-gray-400 rounded-lg cursor-pointer'>
+              <Image
+                className='w-full h-auto p-3'
+                src='/assets/images/img-3.png'
+                alt='iphone'
+                width={500}
+                height={500}
+              />
+            </div>
+
+            <div className='border border-gray-400 rounded-lg cursor-pointer'>
+              <Image
+                className='w-full h-auto p-3'
+                src='/assets/images/img-3.png'
+                alt='iphone'
+                width={500}
+                height={500}
+              />
+            </div>
+
+            <div className='border border-gray-400 rounded-lg cursor-pointer'>
+              <Image
+                className='w-full h-auto p-3'
+                src='/assets/images/img-3.png'
+                alt='iphone'
+                width={500}
+                height={500}
+              />
+            </div>
+          </div>
         </div>
 
         <div className=''>
