@@ -1,8 +1,10 @@
 import { FC } from 'react'
 
-interface Props {}
+interface Props {
+  title: string
+}
 
-const Navbar: FC<Props> = (): JSX.Element => {
+const Navbar: FC<Props> = ({ title }): JSX.Element => {
   return (
     <div className='flex md:hidden items-center justify-between mb-6'>
       <div className='w-7 h-7 bg-white shadow-lg flex items-center justify-center rounded'>
@@ -19,7 +21,7 @@ const Navbar: FC<Props> = (): JSX.Element => {
           />
         </svg>
       </div>
-      <div className='text-lg font-bold text-slate-800'>گوشی آیفون 13</div>
+      <div className='text-lg font-bold text-slate-800'>{title}</div>
       <div className='w-7 h-7 bg-white shadow-lg flex items-center justify-center rounded'>
         <svg
           xmlns='http://www.w3.org/2000/svg'
