@@ -5,10 +5,9 @@ import NavbarTop from '@/components/desktop/NavbarTop'
 import BreadCrumbs from '@/components/product/BreadCrumbs'
 import Navbar from '@/components/product/Navbar'
 import NavbarBottom from '@/components/mobile/NavbarBottom'
-import Products from '@/components/mobile/Products'
 import Sidebar from '@/components/mobile/Sidebar'
-import Sort from '@/components/mobile/Sort'
 import ProductDetails from '@/components/product/ProductDetails'
+import AddToCartBtn from '@/components/product/AddToCartBtn'
 
 interface Props {}
 
@@ -46,7 +45,7 @@ const ProductPage: NextPage<Props> = () => {
           </div>
         </div>
 
-        <NavbarBottom />
+        <AddToCartBtn />
       </main>
     </>
   )
