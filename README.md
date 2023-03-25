@@ -1,4 +1,8 @@
 
+## *Implemented with*: 
+  - Tailwindcss
+  - Responsive
+
 
 ## You can see live here:
 
